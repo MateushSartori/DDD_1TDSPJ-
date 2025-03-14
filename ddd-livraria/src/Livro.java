@@ -6,5 +6,6 @@ public class Livro {
     String editora;
     int paginas;
     String resumo;
-    String tipoCapa;        }
+    String tipoCapa;
+
 }
