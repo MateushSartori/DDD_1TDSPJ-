@@ -8,8 +8,17 @@ public class Livro {
     String resumo;
     TipoCapaEnum tipoCapa;
 
+    //Contrutor
+    public Livro(){
+        tipoCapa = TipoCapaEnum.COMUM;
+    }
+    public Livro(Editora editora){
+        this.editora = editora;
+        tipoCapa = TipoCapaEnum.COMUM;
+    }
+
     //Metodo para exibir o livro
-    public void  exibirlivro(){
+    public void  exibirLivro(){
         System.out.println("Livro: " + titulo);
         System.out.println("Autor: " + autor);
         System.out.println("Editora: " + editora.nome);
@@ -18,9 +27,7 @@ public class Livro {
         System.out.println("-------------------------------------\n");
     }
     public String exibirTipoCapa(){
+        return "";
 
-    }
-
-    public void exibirLivro() {
     }
 }

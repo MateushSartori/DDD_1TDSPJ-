@@ -25,6 +25,8 @@ public class TesteLivro {
         Livro livroDaGiovanna = new Livro();
         livroDaGiovanna.titulo = "Harry Potter e a pedra filosofal";
         livroDaGiovanna.autor = "J K ";
+        livroDaGiovanna.editora = novatec;
+        livroDaGiovanna.exibirLivro();
 
         Livro livro = new Livro();
         System.out.println("Informe o título do livro");
@@ -38,6 +40,5 @@ public class TesteLivro {
             livro.tipoCapa = TipoCapaEnum.DURA;
         else
             livro.tipoCapa = TipoCapaEnum.PERSONALIZADA;
-
     }
 }
